@@ -1,0 +1,39 @@
+/* Seletor universal */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do menu */
+nav {
+    background-color: #222;
+    padding: 15px;
+}
+
+/* Seletor descendente */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Seletor de classe */
+.titulo {
+    color: royalblue;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Seletor de ID */
+#descricao {
+    font-size: 22px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Seletor de classe */
+.paragrafo-simples {
+    font-size: 18px;
+    margin: 15px 20px;
+    line-height: 1.5;
+}
