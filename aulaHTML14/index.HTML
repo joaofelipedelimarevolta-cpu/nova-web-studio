@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14 - Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Atividade - Aula 14</h1>
+        <p>Curso: Técnico em Desenvolvimento de Sistemas</p>
+        <p>Disciplina: Linguagem de Marcação / Front-End</p>
+        <p>Aluno: joao felipe de lima revolta</p>
+        <p>Professor(a): ____________________</p>
+    </header>
+
+    <main>
+        <h2>Formulário de Cadastro</h2>
+
+        <form>
+            <label for="campo01">Nome:</label>
+            <input type="text" id="campo01" placeholder="Digite seu nome">
+
+            <label for="campo02">E-mail:</label>
+            <input type="email" id="campo02"
+                   placeholder="Digite seu e-mail" disabled>
+
+            <button type="button" onclick="habilitarCampo()">
+                Habilitar
+            </button>
+
+            <label for="campo03">Telefone:</label>
+            <input type="tel" id="campo03" placeholder="Digite seu telefone">
+
+            <label for="campo04">Curso:</label>
+            <input type="text" id="campo04"
+                   value="Desenvolvimento de Sistemas" readonly>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

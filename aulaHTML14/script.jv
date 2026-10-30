@@ -1,0 +1,11 @@
+
+function habilitarCampo() {
+    const campo = document.getElementById("campo02");
+
+    campo.disabled = false;
+    campo.focus();
+
+    campo.onblur = function() {
+        campo.disabled = true;
+    };
+}

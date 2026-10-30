@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NovaWeb - Perfil</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+
+            <a class="brand" href="perfil.html">
+                <img src="img/logo.svg" alt="Logo">
+                <span>NovaWeb</span>
+            </a>
+
+            <nav>
+
+                <a href="perfil.html" class="nav-link active">
+                    Meu perfil
+                </a>
+
+                <a href="consulta.html" class="nav-link">
+                    Consultar dados
+                </a>
+
+            </nav>
+
+            <button class="btn btn-outline logout" data-logout>
+                Sair
+            </button>
+
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+                    <p class="eyebrow">PAINEL DO SISTEMA</p>
+                    <h1>Meu perfil</h1>
+                </div>
+
+                <span class="status">● Online</span>
+
+            </header>
+
+            <!-- BOAS-VINDAS -->
+            <section class="welcome-card">
+
+                <div>
+
+                    <p class="eyebrow">BEM-VINDO(A)</p>
+
+                    <h2 id="welcomeName">
+                        Olá!
+                    </h2>
+
+                    <p>
+                        Confira seus dados cadastrados no sistema.
+                    </p>
+
+                </div>
+
+                <img
+                    src="img/avatar.svg"
+                    alt="Imagem de perfil"
+                    class="avatar-large"
+                >
+
+            </section>
+
+            <!-- INFORMAÇÕES DO USUÁRIO -->
+            <section class="panel">
+
+                <div class="section-heading">
+
+                    <div>
+                        <h2>Informações pessoais</h2>
+
+                        <p>
+                            Dados da conta atualmente conectada.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="profile-grid">
+
+                    <div class="info-item">
+
+                        <span>Nome</span>
+
+                        <strong id="profileName">
+                            Usuário NovaWeb
+                        </strong>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <span>E-mail</span>
+
+                        <strong id="profileEmail">
+                            usuario@exemplo.com
+                        </strong>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <span>Cargo</span>
+
+                        <strong>
+                            Usuário do sistema
+                        </strong>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <span>Status</span>
+
+                        <strong class="text-success">
+                            Ativo
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

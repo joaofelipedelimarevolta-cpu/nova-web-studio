@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaWeb | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+  <main class="login-container">
+    <section class="login-card">
+      <img class="brand-logo" src="img/logo.svg" alt="Logo NovaWeb">
+      <h1>Acesse sua conta</h1>
+      <p class="subtitle">Entre para continuar no sistema.</p>
+      <form id="loginForm">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Digite sua senha" required minlength="4">
+        <button class="btn btn-primary btn-full" type="submit">Entrar</button>
+        <p id="loginMessage" class="form-message" aria-live="polite"></p>
+      </form>
+      <p class="login-help">Acesso demonstrativo: use qualquer e-mail válido e senha com 4 caracteres ou mais.</p>
+    </section>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

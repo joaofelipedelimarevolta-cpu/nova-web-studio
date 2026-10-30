@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NovaWeb - Consulta</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+
+            <a class="brand" href="perfil.html">
+
+                <img src="img/logo.svg" alt="Logo">
+
+                <span>NovaWeb</span>
+
+            </a>
+
+            <nav>
+
+                <a href="perfil.html" class="nav-link">
+                    Meu perfil
+                </a>
+
+                <a href="consulta.html" class="nav-link active">
+                    Consultar dados
+                </a>
+
+            </nav>
+
+            <button class="btn btn-outline logout" data-logout>
+                Sair
+            </button>
+
+        </aside>
+
+        <!-- CONTEÚDO -->
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <p class="eyebrow">PAINEL DO SISTEMA</p>
+
+                    <h1>Consulta de usuários</h1>
+
+                </div>
+
+                <span class="status">● Online</span>
+
+            </header>
+
+            <!-- TABELA -->
+            <section class="panel">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <h2>Usuários cadastrados</h2>
+
+                        <p>
+                            Pesquise pelo nome, e-mail ou setor.
+                        </p>
+
+                    </div>
+
+                    <span class="counter" id="resultCount">
+                        5 registros
+                    </span>
+
+                </div>
+
+                <!-- CAMPO DE PESQUISA -->
+                <label for="searchInput">
+                    Pesquisar
+                </label>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    class="search-input"
+                    placeholder="Digite para filtrar os registros..."
+                >
+
+                <!-- TABELA DE USUÁRIOS -->
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Nome</th>
+
+                                <th>E-mail</th>
+
+                                <th>Setor</th>
+
+                                <th>Status</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="usersTable">
+
+                            <tr>
+
+                                <td>Mariana Costa</td>
+
+                                <td>mariana@novaweb.com</td>
+
+                                <td>Financeiro</td>
+
+                                <td>
+                                    <span class="tag tag-active">
+                                        Ativo
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Pedro Santos</td>
+
+                                <td>pedro@novaweb.com</td>
+
+                                <td>Vendas</td>
+
+                                <td>
+                                    <span class="tag tag-active">
+                                        Ativo
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Ana Oliveira</td>
+
+                                <td>ana@novaweb.com</td>
+
+                                <td>Recursos Humanos</td>
+
+                                <td>
+                                    <span class="tag tag-inactive">
+                                        Inativo
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Lucas Ferreira</td>
+
+                                <td>lucas@novaweb.com</td>
+
+                                <td>TI</td>
+
+                                <td>
+                                    <span class="tag tag-active">
+                                        Ativo
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Beatriz Lima</td>
+
+                                <td>beatriz@novaweb.com</td>
+
+                                <td>Atendimento</td>
+
+                                <td>
+                                    <span class="tag tag-active">
+                                        Ativo
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                    <p id="emptyMessage" class="empty-message" hidden>
+                        Nenhum registro encontrado.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
